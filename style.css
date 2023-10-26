@@ -81,7 +81,7 @@ body {
 .header img {
     width: 200px;
     padding-top: 10px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .registerBlock {
@@ -92,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
 }
 
 .paddingBlock {
@@ -111,13 +112,21 @@ body {
     flex-direction: column;
 }
 
-input[type="text"]::placeholder {
+    input[type="text"]::placeholder {
     padding-left: 10px; 
   }
 
-  input[type="password"]::placeholder {
+    input[type="password"]::placeholder {
     padding-left: 10px; 
   }
+
+    input[type="password"]:focus::placeholder {
+    transform: translateY(-100%);
+}
+
+     input[type="text"]:focus::placeholder {
+    transform: translateY(-100%);
+}
 
 .inputs input {
     background-color: #434343;
@@ -126,6 +135,7 @@ input[type="text"]::placeholder {
     padding: 5px;
     height: 40px;
     border-radius: 5px;
+    color: #fff;
 }
 
 .footer {
@@ -144,7 +154,7 @@ input[type="text"]::placeholder {
     width: 100%;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.515);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
 }
@@ -159,16 +169,14 @@ input[type="text"]::placeholder {
     text-decoration: underline;
 }
 
-.block2 {
+.block2, .block1 {
     display: flex;
     justify-content: space-between;
-    width: 70%;
-}
+    width: 60%;
+    list-style: none;
 
-.block3 {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    width: 495px;
+    font-size: 13px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
