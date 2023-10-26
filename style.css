@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .isNew {
@@ -103,6 +104,10 @@ body {
     justify-content: space-around;
 }
 
+.paddingBlock .title {
+    padding-top: 50px;
+}
+
 ::placeholder {
     color: #b1b1b1;
 }
@@ -178,5 +183,44 @@ body {
     font-size: 13px;
     max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 1px;
 }
+
+@media (max-width: 768px){
+    
+    .background {
+        background-image: none;
+        background-color: #000000;
+    }
+
+    body {
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 70px;
+        overflow-x: hidden;
+    }
+
+    .footer {
+        position: absolute;
+    }
+
+    .footer .block1 {
+        font-size: 18px;
+        padding-right: 250px;
+    }
+
+    .footer .block2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px; 
+        list-style: none; 
+        white-space: nowrap;
+        padding-right: 250px;
+        font-size: 13px;
+    }
+}
+
+
+
 
